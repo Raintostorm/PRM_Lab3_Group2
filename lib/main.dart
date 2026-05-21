@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'examples/abstract_class/abstract_class_demo_screen.dart';
+import 'examples/abstract_class/abstract_class_menu_screen.dart';
 import 'examples/mixin/mixin_demo.dart';
 
 void main() {
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => const AbstractClassDemoScreen(),
+                    builder: (_) => const AbstractClassMenuScreen(),
                   ),
                 );
               },
