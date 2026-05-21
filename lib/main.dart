@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'examples/abstract_class/abstract_class_menu_screen.dart';
+import 'examples/inheritance/inheritance_menu_screen.dart';
 import 'examples/interface/interface_menu_screen.dart';
 import 'examples/mixin/mixin_demo.dart';
 
@@ -58,6 +59,21 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text("Abstract Class Demo"),
+            ),
+
+            const SizedBox(height: 20),
+
+            /// Inheritance Demo
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const InheritanceMenuScreen(),
+                  ),
+                );
+              },
+              child: const Text("Inheritance Demo"),
             ),
 
             const SizedBox(height: 20),
