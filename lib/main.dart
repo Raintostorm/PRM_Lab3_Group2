@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'examples/abstract_class/abstract_class_menu_screen.dart';
+import 'examples/interface/interface_menu_screen.dart';
 import 'examples/mixin/mixin_demo.dart';
 
 void main() {
@@ -72,6 +73,21 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text("Mixin Demo"),
+            ),
+
+            const SizedBox(height: 20),
+
+            /// Interface Demo
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const InterfaceMenuScreen(),
+                  ),
+                );
+              },
+              child: const Text("Interface Demo"),
             ),
           ],
         ),
