@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'examples/abstract_class/abstract_class_demo_screen.dart';
+import 'examples/mixin/mixin_demo.dart';
 
 void main() {
   runApp(const PrmLab3App());
@@ -13,12 +14,68 @@ class PrmLab3App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PRM Lab3 — Abstract Class',
+      title: 'PRM Lab3 — OOP Concepts',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AbstractClassDemoScreen(),
+
+      // Màn hình chính
+      home: const HomeScreen(),
+    );
+  }
+}
+
+/// Home Screen chứa các phần demo
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Flutter OOP Demo"),
+        centerTitle: true,
+      ),
+
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+
+            /// Abstract Class Demo
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AbstractClassDemoScreen(),
+                  ),
+                );
+              },
+              child: const Text("Abstract Class Demo"),
+            ),
+
+            const SizedBox(height: 20),
+
+            /// Mixin Demo
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => MixinExampleScreen(),
+                  ),
+                );
+              },
+              child: const Text("Mixin Demo"),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
