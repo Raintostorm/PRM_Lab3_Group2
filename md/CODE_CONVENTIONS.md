@@ -55,7 +55,7 @@ md/
 | 6.2 TaskRepository | `lib/examples/abstract_class/task_repository.dart` |
 | 6.3 AppPage | `lib/examples/abstract_class/app_page.dart` |
 | 6.4 Framework | `lib/examples/abstract_class/framework_note.dart` |
-| Menu + demo UI | `abstract_class_menu_screen.dart`, `*_demo_screen.dart`, `demo_labels.dart` |
+| Demo UI | `lib/examples/abstract_class/abstract_class_demo_screen.dart` |
 
 Các topic khác (inheritance, interface, mixin) **copy bảng tương tự** vào file `.md` của họ khi hoàn thành.
 
