@@ -41,7 +41,7 @@ flutter pub get
 flutter run
 ```
 
-App mở màn **Abstract Class Demo** (4 ví dụ: Animal, Repository, AppPage, framework notes).
+App mở **Abstract Class Lab** (menu) → 4 màn riêng (Animal, Repository, AppPage, framework).
 
 ```bash
 flutter test

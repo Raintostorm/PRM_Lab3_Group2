@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'examples/abstract_class/abstract_class_demo_screen.dart';
+import 'examples/abstract_class/abstract_class_menu_screen.dart';
 
 void main() {
   runApp(const PrmLab3App());
@@ -18,7 +18,7 @@ class PrmLab3App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AbstractClassDemoScreen(),
+      home: const AbstractClassMenuScreen(),
     );
   }
 }

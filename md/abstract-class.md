@@ -88,7 +88,12 @@ final w = Text('OK');    // Concrete subclass — hợp lệ
 | **6.2** | [`lib/examples/abstract_class/task_repository.dart`](../lib/examples/abstract_class/task_repository.dart) | `TaskRepository` — `toggleDone()` dùng chung, `persist()` abstract |
 | **6.3** | [`lib/examples/abstract_class/app_page.dart`](../lib/examples/abstract_class/app_page.dart) | `AppPage` giống `StatelessWidget`: abstract `build()`, `AppPageHost` hiển thị |
 | **6.4** | [`lib/examples/abstract_class/framework_note.dart`](../lib/examples/abstract_class/framework_note.dart) | Ghi chú `Widget` / `State` / `setState` trong framework |
-| **Demo UI** | [`lib/examples/abstract_class/abstract_class_demo_screen.dart`](../lib/examples/abstract_class/abstract_class_demo_screen.dart) | Gộp 4 ví dụ trên một màn hình |
+| **Menu** | [`lib/examples/abstract_class/abstract_class_menu_screen.dart`](../lib/examples/abstract_class/abstract_class_menu_screen.dart) | Chọn 1 trong 4 ví dụ |
+| **Màn 1** | [`animal_demo_screen.dart`](../lib/examples/abstract_class/animal_demo_screen.dart) | Nhãn ABSTRACT/CONCRETE + `Animal` → `Dog`/`Cat` |
+| **Màn 2** | [`repository_demo_screen.dart`](../lib/examples/abstract_class/repository_demo_screen.dart) | `TaskRepository` vs `InMemoryTaskRepository` |
+| **Màn 3** | [`app_page_demo_screen.dart`](../lib/examples/abstract_class/app_page_demo_screen.dart) | `AppPage` + so sánh `StatelessWidget` |
+| **Màn 4** | [`framework_demo_screen.dart`](../lib/examples/abstract_class/framework_demo_screen.dart) | Ghi chú framework |
+| **Nhãn UI** | [`demo_labels.dart`](../lib/examples/abstract_class/demo_labels.dart) | Hộp ABSTRACT / CONCRETE / Biến → Thực tế |
 | **Entry** | [`lib/main.dart`](../lib/main.dart) | `PrmLab3App` extends `StatelessWidget` (abstract class có sẵn) |
 
 ### 6.1 — `Animal` (Dart thuần)
@@ -120,7 +125,7 @@ flutter pub get
 flutter run
 ```
 
-Màn hình **Abstract Class Demo** hiển thị lần lượt 4 section tương ứng mục 6.
+App mở **Abstract Class Lab** (menu) → chọn từng màn 1–4; mỗi màn có nhãn **ABSTRACT / CONCRETE** và dòng **Biến → Thực tế** (`runtimeType`).
 
 ```bash
 flutter test
