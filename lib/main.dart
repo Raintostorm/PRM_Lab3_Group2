@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'examples/abstract_class/abstract_class_menu_screen.dart';
 import 'examples/inheritance/inheritance_menu_screen.dart';
 import 'examples/interface/interface_menu_screen.dart';
-import 'examples/mixin/mixin_demo.dart';
+import 'examples/mixin/login_screen_example.dart';
 
 void main() {
   runApp(const PrmLab3App());
@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => MixinExampleScreen(),
+                    builder: (_) => LoginScreenExample(),
                   ),
                 );
               },
